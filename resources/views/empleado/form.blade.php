@@ -37,8 +37,14 @@
 </div>
 
 <div class="d-flex gap-2">
-    <input id="submit" class="btn btn-success" type="submit" value="{{ $mode }}" />
-
     <!-- Link to go back -->
-    <a href="{{ url('empleado') }}" class="btn btn-primary">Go back</a>
+    <a href="{{ url('empleado') }}" class="btn btn-secondary">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        Go back
+    </a>
+
+    <button id="submit" class="btn btn-primary" type="submit">
+        <i class="fa fa-floppy-o" aria-hidden="true"></i>
+        {{ $mode }}
+    </button>
 </div>
